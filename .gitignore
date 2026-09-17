@@ -1,0 +1,10 @@
+# Editor settings
+.vscode/
+
+# Unrelated C# test project
+zent-portfolio/
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
