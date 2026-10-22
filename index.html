@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zent Stefansen</title>
-  <meta name="description" content="Portefølje til Zent Stefansen – student i dataingeniørfag med interesse for fullstack-utvikling og kunstig intelligens." />
+  <meta name="description" content="Portefølje til Zent Stefansen – IT-student ved UiA med interesse for frontend, backend, databaser og datasikkerhet." />
   <meta property="og:title" content="Zent Stefansen" />
-  <meta property="og:description" content="Student i dataingeniørfag. Fullstack-utvikling og KI." />
+  <meta property="og:description" content="IT-student ved UiA. Utvikling, databaser og datasikkerhet." />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#000000" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23000'/%3E%3Ctext x='16' y='22' font-family='Arial Black,Arial' font-weight='900' font-size='15' fill='%23e8590c' text-anchor='middle'%3EZS%3C/text%3E%3C/svg%3E" />
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
   <a class="skip-link" href="#main">Hopp til innhold</a>
 
   <header class="site-header">
@@ -39,23 +40,23 @@
     </nav>
   </header>
 
-  <main id="main">
+  <main id="main" class="h-track">
     <!-- Hero -->
     <section id="home" class="hero">
       <div class="container hero-grid">
         <div class="hero-content">
-          <p class="status"><span class="status__dot" aria-hidden="true"></span>Åpen for praksisplass</p>
-          <h1>Zent<br />Stefansen</h1>
-          <p class="hero-tagline">Student · <em>Fullstack</em> · <em>KI</em></p>
-          <p class="hero-lede">
-            Jeg bygger webapplikasjoner fra database til grensesnitt, og bruker maskinlæring
-            der det faktisk gjør produktet bedre.
+          <p class="status" data-reveal><span class="status__dot" aria-hidden="true"></span>Åpen for praksisplass</p>
+          <h1 data-reveal>Zent<br />Stefansen</h1>
+          <p class="hero-tagline" data-reveal>IT-student · <em>Utvikling</em> · <em>Datasikkerhet</em></p>
+          <p class="hero-lede" data-reveal>
+            Jeg liker å forstå hele kjeden i et system, fra det brukeren ser og klikker på,
+            til hvordan dataene lagres og sikres i bunn.
           </p>
-          <div class="hero-actions">
+          <div class="hero-actions" data-reveal>
             <a href="#projects" class="btn">Se prosjekter</a>
-            <!-- TODO: legg CV-en din i assets/cv.pdf -->
-            <a href="assets/cv.pdf" class="btn btn--outline" download>Last ned CV</a>
+            <a href="assets/cv.pdf" class="btn btn--outline" download="CV_Zent_Stefansen.pdf">Last ned CV</a>
           </div>
+          <p class="scroll-hint" aria-hidden="true"><span class="scroll-hint__arrow"></span> Scroll sidelengs</p>
         </div>
       </div>
     </section>
@@ -63,39 +64,41 @@
     <!-- About -->
     <section id="about" class="section">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <span class="section-num">01</span>
           <h2>Om meg</h2>
         </div>
 
         <div class="about-grid">
-          <div class="about-photo">
-            <!-- TODO: legg et bilde i assets/profile.jpg -->
-            <img src="assets/profile.jpg" alt="Portrett av Zent Stefansen" width="240" height="240" onerror="this.parentElement.classList.add('is-placeholder')" />
+          <div class="about-photo" data-reveal>
+            <img src="assets/profile.webp" alt="Portrett av Zent Stefansen" width="240" height="240" onerror="this.parentElement.classList.add('is-placeholder')" />
             <span class="about-photo__fallback" aria-hidden="true">ZS</span>
           </div>
 
-          <div class="about-text">
+          <div class="about-text" data-reveal>
             <p class="about-intro">
-              Jeg liker å bygge ting fra bunn til topp: fra database og API i backend, til et
-              grensesnitt folk faktisk liker å bruke.
+              Jeg heter Zent, er 22 år og studerer IT og informasjonssystemer ved UiA.
             </p>
             <p>
-              De siste årene har jeg blitt stadig mer interessert i kunstig intelligens, og prøver nå å
-              kombinere fullstack-utvikling med maskinlæring i prosjektene mine.
+              Jeg er interessert i det meste innen utvikling, som frontend, backend, databaser og
+              datasikkerhet. Jeg trives best når jeg forstår hele kjeden i et system, fra det brukeren ser
+              og klikker på, til hvordan dataene lagres og sikres i bunn.
             </p>
             <p>
-              Jeg liker å ta noe komplisert, som hvordan en transformer vekter ordene i en setning eller
-              hvordan et API bør designes for å skalere, og finne en enkel måte å forklare det på. Utenom
-              forelesninger leser jeg forskningsartikler, jobber med sideprosjekter og skriver notater om
-              det jeg har lært.
+              Den brede interessen gjør at jeg liker å bevege meg litt på tvers i prosjekter, enten det er
+              å sette opp en database, bygge et grensesnitt eller tenke gjennom hvordan løsningen skal
+              sikres mot feil bruk. Jeg lærer best ved å bygge noe selv og teste det i praksis, fremfor å
+              bare lese meg opp på teori.
+            </p>
+            <p>
+              Ved siden av studiene jobber jeg deltid på Oslo lufthavn. Det har lært meg mye om struktur,
+              ansvar og det å holde hodet kaldt når det er travelt.
             </p>
 
             <dl class="facts">
-              <div><dt>Studerer</dt><dd>Dataingeniørfag, KI-retning</dd></div>
-              <div><dt>Fokus</dt><dd>Fullstack og maskinlæring</dd></div>
-              <!-- TODO: fyll inn bosted -->
-              <div><dt>Bosted</dt><dd>Din by, land</dd></div>
+              <div><dt>Studerer</dt><dd>IT og informasjons&shy;systemer, UiA</dd></div>
+              <div><dt>Interesser</dt><dd>Utvikling, databaser og datasikkerhet</dd></div>
+              <div><dt>Jobber</dt><dd>Deltid på Oslo lufthavn</dd></div>
             </dl>
           </div>
         </div>
@@ -105,13 +108,13 @@
     <!-- Skills -->
     <section id="skills" class="section section--panel">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <span class="section-num">02</span>
           <h2>Ferdigheter</h2>
         </div>
 
         <dl class="skills">
-          <div class="skills__row">
+          <div class="skills__row" data-reveal>
             <dt>Frontend</dt>
             <dd class="tags">
               <span class="tag">HTML/CSS</span>
@@ -120,7 +123,7 @@
               <span class="tag">React</span>
             </dd>
           </div>
-          <div class="skills__row">
+          <div class="skills__row" data-reveal>
             <dt>Backend</dt>
             <dd class="tags">
               <span class="tag">C#</span>
@@ -131,7 +134,7 @@
               <span class="tag">REST-API-er</span>
             </dd>
           </div>
-          <div class="skills__row">
+          <div class="skills__row" data-reveal>
             <dt>KI og maskinlæring</dt>
             <dd class="tags">
               <span class="tag">Python</span>
@@ -143,7 +146,7 @@
               <span class="tag">Jupyter</span>
             </dd>
           </div>
-          <div class="skills__row">
+          <div class="skills__row" data-reveal>
             <dt>Verktøy</dt>
             <dd class="tags">
               <span class="tag">Git</span>
@@ -153,7 +156,7 @@
               <span class="tag">Google Colab</span>
             </dd>
           </div>
-          <div class="skills__row skills__row--learning">
+          <div class="skills__row skills__row--learning" data-reveal>
             <dt>Lærer nå</dt>
             <dd class="tags">
               <span class="tag tag--dashed">Transformere</span>
@@ -169,14 +172,45 @@
     <!-- Projects -->
     <section id="projects" class="section">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <span class="section-num">03</span>
           <h2>Prosjekter</h2>
         </div>
 
         <!-- TODO: bytt ut href="#" med lenker til GitHub-repo og demoer -->
         <div class="projects-grid">
-          <article class="project project--featured">
+          <article class="project project--featured" data-reveal>
+            <div class="project__head">
+              <span class="project__path">~/prosjekter/aor</span>
+              <span class="project__kind">Samarbeid</span>
+            </div>
+            <div class="project__body">
+              <h3>AOR – Aviation Obstacle Registration</h3>
+              <p>Laget i samarbeid med Norsk Luftambulanse og Kartverket. Et system der flybesetning
+                rapporterer luftfartshindre i et kartbasert grensesnitt, med godkjenning og saksbehandling for
+                registrerere og administratorer.</p>
+              <ul class="project__stack" aria-label="Stikkord">
+                <li>Kart</li><li>Saksbehandling</li><li>Roller og tilganger</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <div class="project__head">
+              <span class="project__path">~/prosjekter/safemap</span>
+              <span class="project__kind">GIS</span>
+            </div>
+            <div class="project__body">
+              <h3>SafeMap</h3>
+              <p>Laget i samarbeid med Kartverket og Norkart (IS-218, UiA). En GIS-løsning som kartlegger
+                sårbarheter og befolkningens tilgang til kritisk infrastruktur i Norges totalberedskap.</p>
+              <ul class="project__stack" aria-label="Stikkord">
+                <li>GIS</li><li>Beredskap</li><li>Kritisk infrastruktur</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
             <div class="project__head">
               <span class="project__path">~/prosjekter/oppgaveapp</span>
               <span class="project__kind">Fullstack</span>
@@ -195,7 +229,7 @@
             </div>
           </article>
 
-          <article class="project">
+          <article class="project" data-reveal>
             <div class="project__head">
               <span class="project__path">~/prosjekter/studievenn</span>
               <span class="project__kind">KI</span>
@@ -214,7 +248,7 @@
             </div>
           </article>
 
-          <article class="project">
+          <article class="project" data-reveal>
             <div class="project__head">
               <span class="project__path">~/prosjekter/mnist-tegn</span>
               <span class="project__kind">KI</span>
@@ -233,7 +267,7 @@
             </div>
           </article>
 
-          <article class="project">
+          <article class="project" data-reveal>
             <div class="project__head">
               <span class="project__path">~/prosjekter/karakterprediksjon</span>
               <span class="project__kind">Data</span>
@@ -252,7 +286,7 @@
             </div>
           </article>
 
-          <article class="project">
+          <article class="project" data-reveal>
             <div class="project__head">
               <span class="project__path">~/prosjekter/nn-numpy</span>
               <span class="project__kind">KI</span>
@@ -276,22 +310,21 @@
     <!-- Education -->
     <section id="education" class="section section--panel">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <span class="section-num">04</span>
-          <h2>Utdanning</h2>
+          <h2>Utdanning og jobb</h2>
         </div>
 
         <ol class="timeline">
-          <li class="timeline__item">
-            <span class="timeline__date">2023 – nå</span>
+          <li class="timeline__item" data-reveal>
+            <span class="timeline__date">Aug. 2024 – jun. 2027</span>
             <div>
-              <h3>Bachelor i dataingeniørfag, KI-retning</h3>
-              <!-- TODO: fyll inn navn på universitet -->
-              <p>Navn på universitet. Emner innen maskinlæring, datastrukturer og algoritmer, statistikk og
-                nevrale nettverk. Medlem av KI-/robotikklubben.</p>
+              <h3>Bachelor i IT og informasjons&shy;systemer, UiA</h3>
+              <p>Bachelorstudent ved Universitetet i Agder, ferdig utdannet sommeren 2027. Interessert i
+                frontend, backend, databaser og datasikkerhet.</p>
             </div>
           </li>
-          <li class="timeline__item">
+          <li class="timeline__item" data-reveal>
             <span class="timeline__date">2024</span>
             <div>
               <h3>Spesialisering i maskinlæring</h3>
@@ -299,7 +332,16 @@
                 ML-utvikling.</p>
             </div>
           </li>
-          <li class="timeline__item">
+          <li class="timeline__item" data-reveal>
+            <span class="timeline__date">Aug. 2023 – nå</span>
+            <div>
+              <h3>Newrest, Oslo lufthavn</h3>
+              <p>Jobbet med plukk og pakk i matproduksjonen for flycatering, med fokus på nøyaktighet,
+                hygiene og effektivitet. Siden august 2024 tilkallingsvikar i produksjon og lager i ferier og
+                ved siden av studiene.</p>
+            </div>
+          </li>
+          <li class="timeline__item" data-reveal>
             <span class="timeline__date">2023</span>
             <div>
               <h3>De første kodelinjene</h3>
@@ -313,23 +355,23 @@
     <!-- Contact -->
     <section id="contact" class="section contact">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <span class="section-num">05</span>
           <h2>Kontakt</h2>
         </div>
 
         <div class="contact-grid">
-          <div class="contact-info">
-            <p class="contact-lede">Åpen for praksisplasser innen fullstack-utvikling eller KI, eller bare en faglig samtale.</p>
+          <div class="contact-info" data-reveal>
+            <p class="contact-lede">Åpen for praksisplasser innen utvikling eller datasikkerhet, eller bare en faglig samtale.</p>
             <!-- TODO: bytt ut e-post og profil-lenker med dine egne -->
-            <a class="contact-email" href="mailto:zent@example.com">zent@example.com</a>
+            <a class="contact-email" href="mailto:zentpresga@gmail.com">zentpresga@gmail.com</a>
             <ul class="social-links">
-              <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
-              <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://github.com/zentpresgaa" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://www.linkedin.com/in/zentstefansen" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></li>
             </ul>
           </div>
 
-          <form class="contact-form" id="contact-form" data-email="zent@example.com">
+          <form class="contact-form" data-reveal id="contact-form" data-email="zentpresga@gmail.com">
             <div class="field">
               <label for="name">Navn</label>
               <input type="text" id="name" name="name" autocomplete="name" required />
